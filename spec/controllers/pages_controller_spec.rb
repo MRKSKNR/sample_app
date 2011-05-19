@@ -4,9 +4,7 @@ describe PagesController do
   render_views
 
   before(:each) do
-    
-    @base_title="Ruby on Rails Tutorial Sample App"
-    
+    @base_title = "Ruby on Rails Tutorial Sample App"
   end
 
   describe "GET 'home'" do
@@ -48,7 +46,7 @@ describe PagesController do
     end
   end
   
-    describe "GET 'help'" do
+  describe "GET 'help'" do
     it "should be successful" do
       get 'help'
       response.should be_success
@@ -60,5 +58,4 @@ describe PagesController do
                                     :content => @base_title + " | Help")
     end
   end
-  
 end
